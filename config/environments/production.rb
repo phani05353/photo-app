@@ -25,6 +25,9 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+  RECAPTCHA_PUBLIC_KEY= '6LeBrRsTAAAAAPl0dB7usxl5h84JDvP3UoXtCXg6'
+  RECAPTCHA_PRIVATE_KEY= '6LeBrRsTAAAAADrxl228Vvgy1D-34BTmkPz3voUv'
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass

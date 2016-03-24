@@ -31,6 +31,8 @@ Rails.application.configure do
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
+  RECAPTCHA_PUBLIC_KEY= '6LeBrRsTAAAAAPl0dB7usxl5h84JDvP3UoXtCXg6'
+  RECAPTCHA_PRIVATE_KEY= '6LeBrRsTAAAAADrxl228Vvgy1D-34BTmkPz3voUv'
 
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.

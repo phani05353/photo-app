@@ -8,6 +8,7 @@ gem 'devise'
 gem 'stripe'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem "recaptcha", :require => "recaptcha/rails"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'twilio-ruby', '~> 4.1.0'

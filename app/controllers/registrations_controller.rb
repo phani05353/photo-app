@@ -8,6 +8,8 @@ if resource.persisted?
 @payment = Payment.new({ email: params["user"]["email"],
 token: params[:payment]["token"], user_id: resource.id })
 flash[:error] = "Please check registration errors" unless @payment.valid?
+   if verify_recaptcha(:payment=> @payment, :message => "Please enter the correct captcha!")
+
 begin
 @payment.process_payment
 @payment.save
@@ -30,6 +32,7 @@ else
 clean_up_passwords resource
 set_minimum_password_length
 respond_with resource
+end
 end
 end
 end
